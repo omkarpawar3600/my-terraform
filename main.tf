@@ -11,7 +11,6 @@ provider "aws" {
   secret_key = var.secret_key
   region = var.region_name
 }
- 
 variable "access_key"{
    type = string
 }
@@ -27,5 +26,5 @@ resource "aws_instance" "myec2" {
   instance_type          = "t2.micro"
   tags = {
     Name = "terraform1"
-  }
+  }
 }
